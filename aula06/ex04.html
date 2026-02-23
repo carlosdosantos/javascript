@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(105, 105, 175);
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        h1{
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!!</h1><!--Comentário-->
+    <p>Já me livrei da maldição!</p>
+    
+    <script>
+        /*Number.parseInt ou parseFloat = são formas de converter uma string para número...
+        forma simplificada = number(n)
+        
+        para converter de número para string
+        String(n) ou n.toString()*/
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        var s = n1 + n2 
+        //window.alert('A soma dos valores é: ' + s)concatenar
+        window.alert(`A soma entre ${n1} + ${n2} é igual a ${s}`)
+
+        /*${} = placeholder -- serve para facilitar o uso da concatenação...
+        'O aluno ' + nome + ' com ' + idade + ' anos, tirou a nota ' + nota --- uso concatenado
+        `O aluno ${nome} com ${idade} anos tirou a nota {nota}` --- uso do placeholder.. junto com o template string
+        template string = quando a frase é escrita entre crase
+        .length = quantos caracteres a string tem
+        .toUpperCase = passa todas as letras para maiúsculas
+        .toLowerCase = passa todas as letras para minúsculas*/
+
+    </script>
+</body>
+</html>
